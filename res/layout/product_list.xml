@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/layout_top" />
+
+    <RadioGroup
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/toolbar"
+        android:orientation="horizontal"
+        android:padding="0dip" >
+
+        <RadioButton
+            android:id="@+id/check1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/top_tab_1_sel"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:minWidth="50dip"
+            android:text="材质"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/check2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/top_tab_1_sel"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:minWidth="50dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:text="题材"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/check3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/top_tab_1_sel"
+            android:button="@null"
+            android:checked="false"
+            android:gravity="center"
+            android:minWidth="50dip"
+            android:paddingBottom="8dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="8dip"
+            android:text="价格"
+            android:textColor="@color/black"
+            android:visibility="visible" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/topLayout"
+        android:background="@drawable/corner_list_bg"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="1dip"
+        android:footerDividersEnabled="false"
+        android:padding="1dip" >
+    </ListView>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/logo"
+        android:focusable="false" />
+
+</RelativeLayout>

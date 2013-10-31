@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/titlbar_blank" >
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dip"
+                    android:text="产品搜索"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:id="@+id/dialerBtn"
+                    android:layout_width="60dip"
+                    android:layout_height="40dip"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/button"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/calltel" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:text="搜索" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="产品名称"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <EditText
+                    android:id="@+id/text_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+id/title"
+                    android:hint="请输入产品名称"
+                    android:singleLine="true"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_1"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="市场价格"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <EditText
+                    android:id="@+id/text_2_1"
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+id/title"
+                    android:hint="最小值"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <EditText
+                    android:id="@+id/text_2_2"
+                    android:layout_width="110dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+id/text_2_1"
+                    android:hint="最大值"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_2"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="题材"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:text="全部"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_3"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="材质"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/text_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:text="全部"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_4"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="客户方向"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/text_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:text="全部"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_5"
+                android:background="@drawable/corner_list_pressed" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="使用方向"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <TextView
+                    android:id="@+id/text_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:text="全部"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_6"
+                android:background="@drawable/corner_list_pressed"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dip"
+                    android:text="用途"
+                    android:textColor="@color/black"
+                    android:textSize="20dip" />
+
+                <EditText
+                    android:id="@+id/text_7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dip"
+                    android:layout_toRightOf="@+id/title"
+                    android:hint="全部"
+                    android:singleLine="true"
+                    android:textSize="20dip" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

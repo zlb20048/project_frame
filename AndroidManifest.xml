@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xwtec.yycoin"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="4" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 底部Activity -->
+        <activity
+            android:name=".activity.BottomTabAcitivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面Activity -->
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.HomeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.BannerActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.BannerActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产品界面Activity -->
+        <activity
+            android:name=".activity.ProductActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ProductActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OrderActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.OrderActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OrderDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.OrderDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产品界面Activity -->
+        <activity
+            android:name=".activity.GridActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.GridActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产品界面Activity -->
+        <activity
+            android:name=".activity.NewGridActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.NewGridActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CarProductDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.CarProductDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产品详情界面Activity -->
+        <activity
+            android:name=".activity.ProductDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ProductDetailActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 产品详情界面Activity -->
+        <activity
+            android:name=".activity.ImageShowActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ImageShowActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ImageSwitcherActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ImageSwitcherActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 下级列表界面 -->
+        <activity
+            android:name=".activity.ProductListActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ProductListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CarProductActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.CarProductActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- 搜索界面 -->
+        <activity
+            android:name=".activity.SearchActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.SearchActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 搜索界面 -->
+        <activity
+            android:name=".activity.ShowViewActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ShowViewActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 个人中心界面 -->
+        <activity
+            android:name=".activity.InfoCenterActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.InfoCenterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChangePasswordActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.ChangePasswordActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.PersonInfoActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.PersonInfoActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- 个人中心界面 -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.LoginActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.xwtec.yycoin.activity.RegisterActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

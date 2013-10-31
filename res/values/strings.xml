@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, WelcomeActivity!</string>
+    <string name="app_name">天下礼藏</string>
+    <string name="bis_type">分类</string>
+    <string name="pull_to_refresh_pull_label">下来刷新...</string>
+    <string name="pull_to_refresh_release_label">松开刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">正在加载...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新</string>
+    <string name="home_msg">永银文化创意产业发展有限责任公司始创于1996年，注册资金5000万，是经中国人民银行、国际文物局审批许可经营，国内起步最早、最具实力的文化创意产业翘楚之一。永银文化17年来，始终以“传递文化之美”为己任，坚持走文化创意产品自主研发的创新之路，业务涵盖文化创意产品的创意设计、产品制作、营销推广、以及艺术品鉴定评级等相关配套服务。公司拥有国内一流的研发设计团队、丰富的专业经验与技术储备，并组建了国内首屈一指的定制业务中心，成功为国内数万家企事业单位提供了优质的产品方案！
+		目前，公司旗下已拥有南京、北京、上海、广州、武汉、杭州、济南、成都、沈阳、苏州等十余家分支机构，线上网络交易中心与多家体验中心店为客户提供更贴心的服务。
+		永银将以“收存记忆、典藏永恒”为使命，在“打造中华文化创意产业第一品牌”的道路上不懈前行！</string>
+    <string name="search">请输入搜索内容</string>
+
+    <string-array name="search_type">
+        <item>名称</item>
+        <item>活动</item>
+    </string-array>
+    <string-array name="search_type_1">
+        <item>全部</item>
+        <item>贵金属</item>
+        <item>邮票</item>
+        <item>钱币</item>
+        <item>陶瓷琉璃</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="search_type_2">
+        <item>全部</item>
+        <item>0-100</item>
+        <item>100-300</item>
+        <item>300-500</item>
+        <item>500-1000</item>
+    </string-array>
+    <string-array name="search_type_3">
+        <item>全部</item>
+        <item>0-10</item>
+        <item>10-40</item>
+        <item>40-100</item>
+        <item>100-500</item>
+    </string-array>
+    <string-array name="search_type_4">
+        <item>全部</item>
+        <item>福文化</item>
+        <item>生肖文化</item>
+        <item>姓氏文化</item>
+        <item>传统文化</item>
+        <item>世界文化</item>
+        <item>体育文化</item>
+        <item>事件文化</item>
+        <item>地域文化</item>
+        <item>个性定制</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="search_type_5">
+        <item>全部</item>
+        <item>政府</item>
+        <item>学校</item>
+        <item>金融保险</item>
+        <item>地产</item>
+        <item>医院</item>
+        <item>其他企事业单位</item>
+    </string-array>
+    <string-array name="search_type_6">
+        <item>全部</item>
+        <item>会议</item>
+        <item>庆典</item>
+        <item>表彰</item>
+        <item>礼赠</item>
+        <item>福利</item>
+        <item>重大事件</item>
+        <item>常规</item>
+    </string-array>
+
+    <string name="tip">提示</string>
+    <string name="loading">正在加载...</string>
+    <string name="sure_btn_str">确定</string>
+
+    <!-- 密码判断 -->
+    <string name="pwd_leng_not_right">请输入至少8位密码</string>
+    <string name="old_pwd_leng_not_right">请输入至少8位旧密码</string>
+    <string name="new_pwd_leng_not_right">请输入至少8位新密码</string>
+    <string name="sure_pwd_leng_not_right">确认密码不正确</string>
+    <string name="user_name_not_be_null">请输入用户名</string>
+    <string name="email_not_be_null">请输入email</string>
+    <string name="true_name_not_be_null">请输入真实姓名</string>
+    <string name="phone_not_be_null">请输入电话号码</string>
+    <string name="address_not_be_null">请输入地址</string>
+    
+
+</resources>

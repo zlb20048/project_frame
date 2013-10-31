@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        style="@style/layout_width_fill"
+        android:background="@drawable/titlbar_blank"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/back_btn" />
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:text="产品展示"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/dialerBtn"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/calltel" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:text="筛选"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.xwtec.yycoin.widget.BannerLayout
+        android:id="@+id/banner"
+        android:layout_width="fill_parent"
+        android:layout_height="120dip"
+        android:layout_below="@+id/layout_1"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/banner_default" />
+    </com.xwtec.yycoin.widget.BannerLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomPonitLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/banner"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:background="@drawable/ad_bg"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/current_position_select" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lineLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/banner"
+        android:textColor="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/searchMsgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/r1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip" >
+
+            <ImageView
+                android:id="@+id/searchTopImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search_select" />
+
+            <TextView
+                android:id="@+id/showType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/searchTopImg"
+                android:layout_centerVertical="true"
+                android:paddingRight="3dip"
+                android:paddingTop="2dip"
+                android:text="名称"
+                android:textColor="@color/search_color"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:layout_toRightOf="@+id/r1" >
+
+            <TextView
+                android:id="@+id/searchEdt"
+                style="@android:style/Widget.TextView"
+                android:layout_width="160dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/searchTopImg"
+                android:background="@drawable/search_input"
+                android:gravity="center_vertical"
+                android:hint="@string/search"
+                android:maxLength="10"
+                android:paddingLeft="5dip"
+                android:singleLine="true"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textHintColor"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7.25dip"
+            android:layout_toRightOf="@+id/r2" >
+
+            <ImageButton
+                android:id="@+id/searchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/searchEdt"
+                android:background="@drawable/searchbtn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/searchMsgLayout" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <com.xwtec.yycoin.widget.ScrollGridView
+                android:id="@+id/grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:numColumns="2"
+                android:stretchMode="columnWidth" >
+            </com.xwtec.yycoin.widget.ScrollGridView>
+
+            <ImageButton
+                android:id="@+id/more_btn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/morelabel" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

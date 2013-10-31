@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000" >
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rg_main_btns"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </TabHost>
+
+    <RadioGroup
+        android:id="@+id/rg_main_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_message"
+            style="@style/main_btn_style"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_1_sel"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/tab_map"
+            style="@style/main_btn_style"
+            android:drawableTop="@drawable/tab_2_sel"
+            android:text="产品" />
+
+        <RadioButton
+            android:id="@+id/tab_say"
+            style="@style/main_btn_style"
+            android:drawableTop="@drawable/tab_3_sel"
+            android:text="收藏"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/tab_discuss"
+            style="@style/main_btn_style"
+            android:drawableTop="@drawable/tab_4_sel"
+            android:text="搜索" />
+
+        <RadioButton
+            android:id="@+id/tab_car"
+            style="@style/main_btn_style"
+            android:drawableTop="@drawable/tab_5_sel"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/tab_center_info"
+            style="@style/main_btn_style"
+            android:drawableTop="@drawable/tab_6_sel"
+            android:text="个人中心" />
+    </RadioGroup>
+
+</RelativeLayout>
